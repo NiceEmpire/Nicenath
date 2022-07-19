@@ -1,0 +1,93 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  opacity: 0.5;
+  margin-top: 10px;
+  border-top: 0.5px solid rgba(169, 169, 169, 0.5);
+  padding: 0 50px;
+  padding-top: 20px;
+}
+.footer h2 {
+  color: purple;
+  font-size: 18px;
+  font-family: open sans, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  padding: 20px 10px;
+  text-align: start;
+}
+.abt-empire {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+}
+.services, .info, .tools, .about {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  
+}
+.services a, .info a, .tools a, .about a {
+  text-decoration: none;
+  text-align: start;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10px;
+  line-height: 25px;
+  transition: color 0.15s, font-size 0.20s;
+}
+.services a:hover, .info a:hover, .tools a:hover, .about a:hover {
+  font-size: 17px;
+  color: rgb(38, 55, 76);
+}
+.services a:active {
+  opacity: 0.8;
+}
+.end {
+  background-image: linear-gradient(to bottom left, rgba(128, 0, 128, 1), rgba(128, 0, 128, 1));
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.follow {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.folo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  font-family: open sans, Arial, Helvetica, sans-serif;
+}
+.social{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.social .fa {
+  color: white;
+  margin-right: 20px;
+  font-size: 30px;
+  transition: all 0.15s;
+}
+.social div {
+  display: flex;
+  flex: 1;
+  
+  font-weight: 400;
+  transition: font-size 0.15s;
+}
+.social .fa:hover {
+  color: skyblue;
+}
+.reserve-right {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}

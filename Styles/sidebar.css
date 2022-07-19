@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#sidebar {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: -200px;
+    width: 170px;
+    background-image: linear-gradient(to bottom left, rgba(128, 0, 128, 1), rgba(128, 0, 128, 0.9));
+    z-index: 2;
+}
+#sidebar #mylist{
+    margin-left: 5px;
+}
+
+#sidebar ul {
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-bottom: 50px;
+    
+}
+#sidebar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+#sidebar li {
+    list-style: none;
+    margin-bottom: 10px;
+    border-bottom: 0.5px dotted white;
+    transition: all 0.15s ease;
+}
+#sidebar li:last-child {
+    border-bottom: none;
+}
+#mylist ul li a:hover {
+    color: skyblue;
+}
+#mylist .icons .fa:hover {
+    color: skyblue;
+}
+#mylist h4 {
+    color: white;
+}
+#mylist .icons .fa {
+    margin-top: 10px;
+    margin-right: 3px;
+    font-size: 25px;
+    color: white;
+}
+#sidebar #close {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+#sidebar #close:hover {
+    font-size: 27px;
+}

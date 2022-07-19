@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    min-height: 100vh;
+    background-image: url(/gallery/background/coinwoman.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+body .home{
+    margin-left: 20px;
+    margin-top: 40px;
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(to right, rgba(128, 0, 128, 0.5), rgba(128, 0, 128, 0.5));
+    padding: 8px 20px;
+    border-radius: 50px;
+    border-top-right-radius: 0;
+}
+body a {
+    transition: all 0.15 ease;
+}
+body a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+.home .fa {
+    margin-right: 8px;
+    font-size: 20px;
+}
+.signup-page {
+    display: flex;
+    margin-top: 20px;
+}
+.lft {
+    flex: 1;
+    min-height: 90vh;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.note {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.note .phon {
+    padding: 20px;
+}
+
+.phnpics {
+    width: 100%;
+}
+.downlod-avail {
+  padding: 5%;
+}
+.downlod-avail h3 {
+    font-size: 1.2em;
+}
+.downlod-avail h1 {
+    color: purple;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: purple;
+    
+}
+.downlod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+.gplay {
+    height: 5.9vh;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.aplay{
+    height: 6vh;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.signup-page .rht {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.5)50%, rgba(255, 255, 255, 0.5)50%);
+    padding: 2%;
+    min-height: 90vh;
+    flex: 1;
+    margin-right: 3%;
+    border-radius: 10px;
+
+}
+.signup-page h2 {
+    text-align: center;
+    width: 90%;
+    background-image: linear-gradient(to right, rgba(128, 0, 128, 0.7), rgba(128, 0, 128, 0.7));
+    border-radius: 5px;
+    color: white;
+    padding: 1.5vh 0;
+}
+.signup-page .username {
+    margin-top:20px ;
+    margin-bottom: 10px;
+}
+.signup-page .rht label {
+    font-size: 1.2em;
+    color: crimson;
+    line-height: 30px;
+}
+.signup-page .rht input {
+    width: 90%;
+    height: 40px;
+    font-size: 1.2em;
+    color: purple;
+    padding-left: 10px;
+    padding-right: 50px;
+    border-radius: 4px;
+    border: 1.3px solid purple;
+    background-color: transparent;
+}
+.signup-page .rht input:focus {
+    outline: none;
+}
+.signup-page p {
+    color: purple;
+    font-size: 1.2em;
+}
+.signup-page .p1 {
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 5px;
+    color: black;
+}
+.signup-page .p2 {
+    color: red;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-style: italic;
+}
+.signup-page a {
+    color: blue;
+}
+.rht button {
+    padding: 1.5vh 0;
+    width: 90%;
+    background-image: linear-gradient(to right, rgba(128, 0, 128, 0.7), rgba(128, 0, 128, 0.7));
+    font-size: 1.5em;
+    border: none;
+    margin-top: 30px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.15s ease;
+}
+.rht button:hover {
+    opacity: 0.8;
+}
+.rht button:active {
+    opacity: 0.6;
+}
+.rht ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.rht li {
+    color: rgb(115, 115, 115);
+    margin-left: 40px;
+}
+.signup-page .sgn {
+    text-align: center;
+}
+.rht .check-cont {
+    margin-top: 20px;
+}
+.rht .check-cont input {
+    height: 15px;
+    width: 15px;
+}
+.rht .check-cont .check {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+    
+}
+.rht .check-cont label {
+    color: blue;
+    font-size: 1em;
+    margin-left: 10px;
+}
+.rht .tc {
+    font-size: 0.9em;
+    margin-top: 20px;
+} 
+
+.rht .pass .fa {
+    margin-left: -35px;
+    cursor: pointer;
+}
+
+@media (min-width:320px) and (max-width: 768px) {
+   /*------ login page query------*/
+.signup-page .lft {
+    display: none;
+}
+.signup-page .rht{
+    width: 100%;
+}
+.signup-page .rht {
+    margin-left: 3%;
+}
+body .home-cont {
+   display: flex;
+   justify-content: right;
+}
+body .home {
+    margin-top: 0;
+    padding: 5px 15px;
+}
+.home .fa {
+    margin-right: 5px;
+    font-size: 15px;
+}
+}

@@ -1,0 +1,279 @@
+/*320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV*/
+
+
+
+@media (max-width: 500px) {
+
+    
+    /*containner-1 section*/
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container-1 {
+        margin-top: 50px;
+        min-height: 20vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+   
+    .mrt .signup-btn{
+        margin-bottom: 30px;
+    }
+    .anim {
+        font-size: 20px;
+    }
+    .ph1{
+        font-size: 0.8em;
+    }
+    /*---- mobile-app query section starts here----*/
+   
+    .downlod-avail h1 {
+        font-size: 2em;
+    }
+    .downlod-avail h3 {
+        font-size: 0.8em;
+    }
+    .gplay {
+        height: 5.9vh;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .aplay{
+        height: 6vh;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    
+    /*----mrkt shop section----*/
+    .prod {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .preview p {
+        font-size: 0.8em;
+    }
+
+    
+ 
+}
+
+   
+
+
+@media (max-width: 768px) {
+       /*header section...
+    for mobile device and tablet...
+    */
+    .header {
+        display: flex;
+        justify-content:space-between;
+        height: 50px;
+        width: 100%;
+    }
+    .container-1 {
+        min-height: 50vh;
+    }
+    .mrt .signup-btn{
+        margin-bottom: 30px;
+    }
+    .menu-box, .btn {
+        display: flex;
+        justify-content: center;
+    }
+    .L1 {
+        margin-left: 10px;
+        width: 40px;
+    }
+    .abt-list {
+        display: none;
+    }
+  
+    .hd_1, .rh-header {
+        flex: 1;
+    }
+    
+     .menu-box li a {
+        color: white;
+    }
+    .L1 {
+        width: 35px;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+ 
+    .p1 {
+        font-size: 1em;
+    }
+     .p2 {
+        font-size: 1.2em;
+    }
+     .menu-btn {
+     visibility: visible;
+     white-space: nowrap;
+     margin-right: 25px;
+    }
+ 
+    /*---- sidebar section----*/
+    
+     
+    #sidebar li a .fa {
+        margin-right: 5px;
+    }
+  
+   
+    /*---- mrt query starts here----*/
+    .coin {
+        font-size: 2.5vw;
+    }
+    .coinlist {
+        position: absolute;
+        top: 10px;
+        right: 5px;
+    }
+    .mrt .signup-btn {
+        padding: 1vh 2vw;
+        font-size: 1em;
+    }
+    /*---- mrt2 query starts here----*/
+    .mrt2 {
+        display: flex;
+        row-gap: 5px;
+        flex-direction: column;
+        min-height: 50vh;
+        width: 100%;
+        margin: 0;
+        margin-top: 5px;
+    }
+    .pics1 {
+        height: 40vh;
+        width: 100%;
+    }
+    .esc-abt h2 {
+        font-size: 1.3em;
+    }
+    .esc-abt p {
+        font-size: 1em;
+    }
+    .ecs {
+        width: 40vw;
+    }
+
+    /*------tbl section----*/
+    .tbl .smc-btn {
+        font-size: 1em;
+    }
+
+    /*----mrkt shop section----*/
+    .markt-shop {
+        display: flex;
+        flex-direction: column;
+    }
+    .banner h1, p {
+        font-size: 1em;
+    }
+    .banner p {
+        font-size: 1.1em;
+    }
+    .markt-shop .banner {
+        height: 200px;
+        background-image: none;
+        border-radius: 0;
+        border-bottom: 0.5px solid rgb(240, 216, 240);
+    }
+
+    /*---- section-footer---*/
+    .footer .abt-empire {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer {
+        padding: 0;
+        padding-top: 10px;
+    }
+    .footer h2 {
+        padding-bottom: 5px;
+    }
+    .follow {
+        display: flex;
+        padding: 5px 0;
+        justify-content: center;
+        border-bottom: 0.5px solid rgba(169, 169, 169, 0.2);
+    }
+   
+
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .abt-list {
+        display: none;
+    }
+  
+   
+    /*---- mobile-app query section starts here----*/
+  .downlod-avail h1 {
+    font-size: 1.5em;
+    }
+   .downlod-avail h3 {
+    font-size: 1em;
+    }
+ 
+}
+@media (min-width: 500px) {
+.mob-app {
+    margin: 0;
+    border-radius: 0;
+}
+.gplay {
+    height: 4.9vh;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .aplay{
+    height: 5vh;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+.downlod-avail h1 {
+    font-size: 1.5em;
+}
+.downlod-avail h3 {
+    font-size: 0.8em;
+}
+}
+
+@media (min-width: 769px) {
+    .menu-box {
+        display: none;
+    }
+    .lg-btn, .menu-btn {
+        font-size: 1.5vw;
+    }
+    #sidebar {
+        display: none;
+    }
+
+       /*---- mobile-app query section starts here----*/
+  .downlod-avail h1 {
+    font-size: 2.5em;
+    }
+   .downlod-avail h3 {
+    font-size: 1.5em;
+    }
+    .gplay {
+        height: 10.5vh;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .aplay{
+        height: 11vh;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+}

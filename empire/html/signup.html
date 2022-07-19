@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>NiceEmpire</title>
+      <link rel="shortcut icon" href="/gallery/logos/logo1.png"/>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="/empire/styles/signup.css">
+   </head>
+   <body>
+       <div class="home-cont"><a class="home" href="/index.html"><i class="fa fa-home"></i>Home page</a></div>
+       <div class="signup-page">
+           <div id="lft" class="lft">
+               <div class="note">
+                  <div class="phon">
+                     <img class="phnpics" src="/gallery/logos/phoneapp.png" alt="" />
+                  </div>
+                  <div class="downlod-avail">
+                     <h1>Mobile app now available!!!</h1>
+                     <h3>For Android and iOS devices</h3>
+                  </div>
+                  <div class="downlod">
+                     <div>
+                        <img class="gplay" src="/gallery/logos/googleplay.png" alt="" />
+                     </div>
+                     <div>
+                        <img class="aplay" src="/gallery/logos/appstore.png" alt="" />
+                     </div>
+                  </div>
+               </div>
+           </div>
+           <div class="rht">
+               <h2>Create Your Account</h2>
+               <p>To register a new account with <span class="p1">Nice</span><span class="p2">Empire</span>,<br> please enter your details..</p>
+               <form id="form" action="/empire/html/profilepage.html" method="get">
+                  <div class="username"> 
+                     <label for="user">Username*</label><br>
+                     <input id="user" name="Name" type="text" required>
+                  </div>
+                  <div> 
+                     <label for="email">Email*</label><br>
+                     <input id="email" type="email" required><br>
+                  </div>
+                  <div> 
+                     <label for="num">Phone*</label><br>
+                     <input id="num" type="tel" required><br>
+                  </div>
+                  <div class="pass"> 
+                     <label for="user">Password*</label><br>
+                     <input id="pass" type="password" required>
+                     <i id="toggle" class="fa fa-eye"></i>
+                  </div>
+                  <ul id="error-list">
+                     <li id="upper">Your password must contain atleast one uppercase.</li>
+                     <li id="length">Your password cannot be less than 8 characters.</li>
+                     <li id="number">Your password must contain atleast one number.</li>
+                     <li id="spec">Your password must contain atleast one special character.</li>
+                  </ul>
+                  <div class="confirm"> 
+                     <label for="pass">Confirm Password*</label><br>
+                     <input id="confirm-pass" type="password" required><br>
+                  </div>
+                  <div id="error"></div>
+                  <div class="check-cont">
+                     <div class="check">
+                        <input type="checkbox" class="age-limit" id="age-limit" required>
+                        <label for="age-limit">I certify that I am 18 years of age or older.</label>
+                     </div>
+                     <div class="check">
+                        <input type="checkbox" class="update-emails">
+                        <label for="update-emails">I agree to receive occasional emails and newsletters from <span class="p1">Nice</span><span class="p2">Empire</span>.</label>
+                     </div>
+                  </div>
+                  <button type="submit" id="submit">Create Account</button>
+               </form>
+               <p class="sgn">Already have an account?<br> <a href="/empire/html/login.html">Log in here</a></p>
+               <p class="tc">By continuing you agree to NiceEmpire's <a href="">Terms of Service</a>  and <a href="">Privacy policy</a> .</p>
+           </div>
+       </div>
+       <script src="../javascript/signup.js"></script>
+   </body>
+</html>

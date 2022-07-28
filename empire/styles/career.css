@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: rgb(243, 241, 241);
+}
+.career_intro {
+    background-image: linear-gradient(to right, rgba(255, 255,255, 0.5), rgba(255, 255,255, 0.5)),  url(/gallery/background/career-background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    min-height: 50vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.career_intro h1 {
+    font-size: 4vw;
+    font-weight: 500;
+}
+.career_intro p {
+    text-align: center;
+    color: purple;
+}
+.career_intro button {
+    padding: 15px 40px;
+    font-size: 1.2em;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-image: linear-gradient(to left, rgba(255, 127, 80, 0.9), rgba(128, 0, 128, 0.7));
+    transition: 0.15s ease;
+    cursor: pointer;
+}
+.career_intro button:hover {
+    opacity: 0.8;
+}
+.why_empire h3 {
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+    font-size: 2em;
+    margin-top: 70px;
+    text-align: center;
+    line-height: 50px;
+}
+.why_empire .p1 {
+    font-size: 1em;
+    font-weight: 500;
+    font-style: italic;
+    margin-left: 5px;
+    color: black;
+}
+.why_empire .p2 {
+    color: red;
+    font-weight: 500;
+    font-size: 1.2em;
+    font-style: italic;
+}
+.work_preview {
+    display: flex;
+    column-gap: 15px;
+    padding: 20px 30px;
+}
+.work_preview div {
+    flex: 1;
+    padding: 20px 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.work_preview h2 {
+    color: rgb(51, 51, 51);
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.mission h3 {
+    font-size: 30px;
+}
+.oppening {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.oppening h2 {
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+    font-size: 30px;
+    padding-top: 40px;
+    margin-bottom: 50px;
+}
+.dept-cont {
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: column;
+    row-gap: 5px;
+    flex: 1;
+}
+.dept-skills {
+    display: flex;
+    background-color: white;
+    padding: 20px 20px;
+    column-gap: 50px;
+}
+.dept {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 241, 241);
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.dept-cont h2, .skills-cont h2 {
+   padding: 0 20px;
+   color: rgb(51, 51, 51);
+   font-size: 2em;
+}
+.dept-cont h2 {
+   margin-bottom: 20px;
+}
+.skills-cont {
+    flex: 2;
+    text-align: center;
+}
+.skills-cont p {
+    color: purple;
+    margin-bottom: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(243, 241, 241);
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.form_data input {
+    width: 450px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: none;
+}
+.form_data input:focus {
+   outline: 0.5px solid black;
+}
+form button {
+    font-size: 1.2em;
+    padding: 10px 50px;
+    margin: auto;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+form button:hover {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+}
+@media (max-width: 769px) {
+    .career_intro {
+        height: 50vw;
+       margin-top: 50px;
+       padding: 0 10px;
+    }
+    .career_intro h1 {
+        font-size: 25px;
+    }
+    .career_intro button {
+        font-size: 1em;
+        padding: 10px 30px;
+    }
+    .career_intro p {
+        font-size: 0.8em;
+    }
+    .why_empire h3 {
+        padding: 0 30px;
+        margin-top: 35px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    .work_preview {
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 5px 10px;
+    }
+    .work_preview h2 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .mission {
+        flex-direction: column;
+    }
+    .mission img {
+        width: 100%;
+
+    }
+    .mission div {
+        padding: 20px;
+    }
+    .dept-skills {
+        flex-direction: column;
+    }
+}
